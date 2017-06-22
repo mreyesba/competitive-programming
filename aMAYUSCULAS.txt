@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main()
 {
   int i = 0;
-  char tmp[255];
-  scanf("%255s", tmp);
-  char c;
-  while (tmp){
+  char tmp[500], c;
+  gets(tmp);
+  while (tmp[i]){
 	c = tmp[i];
 	putchar (toupper(c));
 	i++;
