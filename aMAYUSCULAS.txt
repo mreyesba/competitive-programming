@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  int i = 0;
+  char tmp[255];
+  scanf("%255s", tmp);
+  char c;
+  while (tmp){
+	c = tmp[i];
+	putchar (touper(c));
+	i++;
+  }
+  return 0;
+}
