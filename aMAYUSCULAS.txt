@@ -8,7 +8,7 @@ int main()
   char c;
   while (tmp){
 	c = tmp[i];
-	putchar (touper(c));
+	putchar (toupper(c));
 	i++;
   }
   return 0;
