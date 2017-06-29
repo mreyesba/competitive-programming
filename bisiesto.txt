@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+	int i, j;
+	scanf("&ld",&i);
+	bool div4, div100, div400;
+	while(i>0){
+	scanf("&ld",&j);
+	div4 = j % 4 == 0;
+	div100 = j % 100 == 0;
+	div400 = j % 400 == 0;
+	if((div4 && !div100)||div400) printf("N\n");
+	else printf("S\n");
+	i--;
+	}
+}
